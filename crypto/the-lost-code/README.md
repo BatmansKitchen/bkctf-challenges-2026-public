@@ -1,4 +1,4 @@
-# The Lost Code — BKCTF 2026
+# The Lost Code
 
 **Flag:** `bkctf{triangle_shaft_horse_yacht}`
 
