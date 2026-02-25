@@ -4,9 +4,7 @@
 
 ## Overview
 
-The challenge presented an image encoded in a custom variation of the [Pigpen cipher](https://en.wikipedia.org/wiki/Pigpen_cipher). The goal was to decode the plaintext and submit it as the flag.
-
-## Encoding Scheme
+The flag is in an image encoded in a custom variation of the [Polybius square](https://en.wikipedia.org/wiki/Polybius_square).
 
 The alphabet is split into 5 groups, each anchored by a vowel:
 ```
