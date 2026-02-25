@@ -1,4 +1,4 @@
-# Scryfall Wizard — BKCTF 2026
+# Scryfall Wizard
 
 **Flag:** `bkctf{blockers_is_for_mathing}`
 
