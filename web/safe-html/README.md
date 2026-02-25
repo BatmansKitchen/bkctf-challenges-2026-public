@@ -5,7 +5,7 @@
 ## Overview
 
 A "safe" HTML renderer backed by a custom parser that strictly limits what HTML players could submit. It enforces most of the grammar's rules, but messed up 
-when computing a element list and ndoes.
+when computing a element list and nodes.
 
 The vulnerability is in the serializer. When a `<td>` contains a single text node, it gets rendered as a Jinja2 template expression:
 ```python
