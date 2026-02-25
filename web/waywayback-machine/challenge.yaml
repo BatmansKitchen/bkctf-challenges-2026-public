@@ -1,0 +1,12 @@
+name: "WayWayback Machine"
+description: |-
+  I got tired of having to dig around the internet for old files so I started archiving them myself.
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/waywayback-machine)
+flag: bkctf{m4yb3_1_sh0u1d_st1ck_w1th_4rch1v3_10}
+author: Jono
+points: 500
+
+provide:
+  - file: app.tar.gz
+    as: app.tar.gz

@@ -1,0 +1,9 @@
+name: "Appreciating Graphic Design"
+description: "Did you know you can't make microsoft word art on a mac? I had to make them on my work computer"
+flag: bkctf{4rt_h4z_l4y3rz_l1k3_0ni0n}
+author: Linaphora
+points: 500
+
+provide:
+  - file: bkctfposter.png
+    as: bkcfposter.png

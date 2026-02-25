@@ -1,0 +1,12 @@
+name: "Super Dubs Universe"
+description: |-
+  After his first journey, Dubs embarks on a new quest. To prepare for the changes along the way, the princess provides useful supplies.
+
+  Join Dubs on his quest and see what you find! You'll need to provide your own supplies, though, the princess only prepared for one..
+flag: bkctf{4_l0ng_j0urn3y_thr0ugh_th3_f1l3s!}
+author: JRitz
+points: 500
+
+provide:
+  - file: level1.jpg
+    as: level1.jpg

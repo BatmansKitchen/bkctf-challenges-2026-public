@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lean-ctf
+    ports:
+      - "5000:5000"
+    environment:
+      - MAX_CONNECTIONS=100
+      - PORT=5000
+      - FLAG=bkctf{lmk-in-a-ticket-if-you-do-this-without-native_decide}
+    restart: unless-stopped

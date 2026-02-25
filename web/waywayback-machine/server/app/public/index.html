@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayWayBack Machine - Archive Your Pages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WayWayBack Machine</h1>
+            <p class="subtitle">Archive your web pages forever!</p>
+        </div>
+
+        <div class="info-box">
+            <p>
+                <strong>How it works:</strong> Submit the URL of your webpage, and our bot will visit and archive it for posterity. 
+                Your page will be snapshotted and stored permanently in our archive.
+            </p>
+        </div>
+
+        <div class="warning">
+            <strong>Notice:</strong>
+            Our bot will visit your URL and save a snapshot. Make sure your website is publicly accessible!
+        </div>
+
+        <form id="snapshotForm">
+            <div class="form-group">
+                <label for="urlInput">Website URL:</label>
+                <input 
+                    type="url"
+                    id="urlInput" 
+                    name="url" 
+                    placeholder="https://example.com/your-page.html"
+                    required
+                />
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-primary" id="submitBtn">
+                    Archive This URL
+                </button>
+                <button type="button" class="btn-secondary" onclick="clearForm()">
+                    Clear
+                </button>
+            </div>
+        </form>
+
+        <div id="result" class="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

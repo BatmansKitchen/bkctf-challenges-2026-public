@@ -1,0 +1,21 @@
+version: "2.3"
+services:
+  db:
+    build: .
+    volumes: 
+      - .:/tinysql
+    hostname: tinysql-db
+    command: python tinysql-server.py
+
+  web:
+    build: .
+    container_name: tinysql_2
+    ports:
+      - "0.0.0.0:80:3000"
+    environment:
+      - FLAG=bkctf{sql_1nj3ct10n_0ver_th3_w1re}
+    volumes:
+      - .:/web
+    depends_on:
+      - db
+    command: python ./web_app/app.py

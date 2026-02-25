@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  safehtml:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLAG=bkctf{fu11y_r3m0v3d_x55_but_4t_wh4t_c0st}
+    restart: unless-stopped

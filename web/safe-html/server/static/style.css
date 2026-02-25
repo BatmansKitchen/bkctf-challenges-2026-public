@@ -1,0 +1,169 @@
+/* Dont judge me. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ── Header ─────────────────────────────────────────── */
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* ── Grammar box ─────────────────────────────────────── */
+
+.grammar-box {
+    background: #f0f4ff;
+    border-left: 4px solid #667eea;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.grammar-title {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+    color: #667eea;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid #dce6ff;
+}
+
+.grammar-box pre {
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.9;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+/* ── Editor ──────────────────────────────────────────── */
+
+.editor-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editor-label {
+    color: #333;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s;
+    color: #333;
+}
+
+textarea:focus {
+    border-color: #667eea;
+}
+
+textarea::placeholder {
+    color: #aaa;
+}
+
+button {
+    align-self: flex-start;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* ── Results ─────────────────────────────────────────── */
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.result-label {
+    color: #333;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.error-label {
+    color: #721c24;
+}
+
+.result-box {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    word-break: break-all;
+    min-height: 2.5rem;
+    line-height: 1.6;
+}
+
+.error-box {
+    background: #f8d7da;
+    border: 2px solid #dc3545;
+    color: #721c24;
+}
+
+.output-box {
+    background: #d4edda;
+    border: 2px solid #28a745;
+    color: #155724;
+}

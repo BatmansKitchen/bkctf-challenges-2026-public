@@ -1,0 +1,13 @@
+name: "Be a Legend"
+description: |-
+  Try out our new game built on state of the art websocket technology.
+  Defeat the dragon and become a legend!
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/be-a-legend)
+flag: bkctf{s4v3_5cumm1ng_but_c001}
+author: Jono
+points: 500
+
+provide:
+  - file: app.tar
+    as: app.tar

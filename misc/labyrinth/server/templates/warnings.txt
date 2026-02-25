@@ -1,0 +1,2 @@
+the flag is made of the following possible characters:
+0123456789@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_abcdefghijklmnopqrstuvwxyz{|}

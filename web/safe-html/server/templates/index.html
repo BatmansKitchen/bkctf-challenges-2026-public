@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SafeHTML Renderer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SafeHTML</h1>
+            <p class="subtitle">A provably safe HTML renderer. <br>Submit a document conforming to the grammar and it will be rendered securely.</p>
+        </div>
+
+        <div class="grammar-box">
+            <div class="grammar-title">Grammar</div>
+            <pre>
+Doc     := &lt;doc&gt; EList &lt;/doc&gt;
+EList   := EList Element | Element | ε
+Element := Img | Para | Table
+Table   := &lt;table&gt; RList &lt;/table&gt;
+RList   := RList Row | Row | ε
+Row     := &lt;tr&gt; CList &lt;/tr&gt;
+CList   := CList Cell | Cell | ε
+Cell    := &lt;td&gt; EList &lt;/td&gt;
+Img     := &lt;img Src /&gt;
+Src     := src= Href
+Href    := /static/1.png | /static/2.png | /static/3.png
+Para    := &lt;p&gt; Text &lt;/p&gt;
+Text    := [a-zA-Z0-9]+</pre>
+        </div>
+
+        <div class="editor-section">
+            <div class="editor-label">Document</div>
+            <textarea id="doc" spellcheck="false" placeholder="<doc><p>hello</p></doc>"></textarea>
+            <button id="submit">Render</button>
+        </div>
+
+        <div class="result-section" id="result-section" style="display:none">
+            <div class="result-label" id="result-label">Output</div>
+            <div class="result-box" id="result-box"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', async () => {
+            const doc = document.getElementById('doc').value;
+            const section = document.getElementById('result-section');
+            const label = document.getElementById('result-label');
+            const box = document.getElementById('result-box');
+
+            const res = await fetch('/render', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: 'doc=' + encodeURIComponent(doc)
+            });
+
+            const text = await res.text();
+            section.style.display = 'flex';
+
+            if (res.ok) {
+                label.textContent = 'Output';
+                label.className = 'result-label';
+                box.className = 'result-box output-box';
+                box.innerHTML = text;
+            } else {
+                label.textContent = 'Error';
+                label.className = 'result-label error-label';
+                box.className = 'result-box error-box';
+                box.textContent = text;
+            }
+        });
+    </script>
+</body>
+</html>

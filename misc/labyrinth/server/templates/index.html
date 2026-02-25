@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Labyrinth</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Marcellus', serif;
+        background: linear-gradient(to bottom, #f5f1e6 0%, #e8dcc8 100%);
+        color: #3a2f1b;
+        overflow: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background-image:
+            linear-gradient(#c9b37d 2px, transparent 2px),
+            linear-gradient(90deg, #c9b37d 2px, transparent 2px);
+        background-size: 80px 80px;
+        opacity: 0.12;
+        animation: drift 80s linear infinite;
+    }
+
+    @keyframes drift {
+        from { transform: translate(0, 0); }
+        to { transform: translate(-400px, -400px); }
+    }
+
+    .container {
+        text-align: center;
+        padding: 60px 80px;
+        background: rgba(255, 248, 220, 0.95);
+        border: 4px solid #b89b5e;
+        box-shadow: 0 0 40px rgba(120, 95, 50, 0.4);
+        z-index: 2;
+        max-width: 800px;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        color: #5a4526;
+    }
+
+    /* Scrolling inscription */
+    .scroll-wrapper {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 40px;
+        border-top: 1px solid #b89b5e;
+        border-bottom: 1px solid #b89b5e;
+        padding: 15px 0;
+    }
+
+    .scroll-text {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll-left-to-right 30s linear infinite;
+        font-size: 1.1rem;
+        color: #6b5533;
+    }
+
+    @keyframes scroll-left-to-right {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    .choices {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .path-btn {
+        padding: 14px 40px;
+        font-size: 1rem;
+        border: 2px solid #b89b5e;
+        background: transparent;
+        color: #5a4526;
+        cursor: pointer;
+        letter-spacing: 3px;
+        transition: all 0.3s ease;
+        min-width: 140px;
+    }
+
+    .path-btn:hover {
+        background: #b89b5e;
+        color: #fff8dc;
+        box-shadow: 0 0 20px #b89b5e;
+        transform: scale(1.08);
+    }
+
+    footer {
+        margin-top: 40px;
+        font-style: italic;
+        font-size: 0.9rem;
+        color: #8a7448;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="ornament">𓂀</div>
+    <h1>The Labyrinth</h1>
+    
+    <div class="scroll-wrapper">
+        <div class="scroll-text">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+        </div>
+    </div>
+
+    <p>Beyond these shifting walls lies mystery.</p>
+    <a href="/flag/0">enter at your own risk</a>
+
+    <footer>heed the <a href='/static/warning.txt'>warnings</a> of the lost explorers and head back</footer>
+    </div>
+</div>
+</body>
+</html>

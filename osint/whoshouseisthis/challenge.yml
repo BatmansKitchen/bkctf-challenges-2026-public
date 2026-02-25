@@ -1,0 +1,11 @@
+name: "Who's house is this?"
+description: |-
+  Not haunted mansion at all. 
+  
+  Flag in format `bkctf{firstname_middlename_lastname}`
+flag: bkctf{hiram_newton_muzzy}
+author: "Linaphora + Aramdana"
+points: 500
+provide:
+  - file: house.zip
+    as: house.zip

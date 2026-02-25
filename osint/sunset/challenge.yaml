@@ -1,0 +1,12 @@
+name: "[EASY] more like oh shit amirite"
+description: |-
+  I love listening to the Dead Kennedy's while looking at the water.
+
+  Flag format is the name of the bridge I'm on: `bkctf{golden_gate_bridge}`
+flag: bkctf{sor_kheng_bridge}
+author: Dessel
+points: 500
+
+provide:
+  - file: river.jpg
+    as: river.jpg

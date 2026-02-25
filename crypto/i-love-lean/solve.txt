@@ -1,0 +1,15 @@
+by
+  have h : ∀ c : Nat, mem_effecient_mod_exp b e m c = ((b ^ e) * c) % m := by
+    induction e with
+    | zero =>
+      unfold mem_effecient_mod_exp
+      simp
+    | succ a ih =>
+      intro c
+      unfold mem_effecient_mod_exp
+      simp
+      rw[ih (b * c % m)]
+      rw[Nat.pow_add]
+      simp
+      rw[Nat.mul_assoc, Nat.mul_mod (b ^ a) (b * c) m, Nat.mul_mod b c m, Nat.mul_mod (b ^ a % m) (b % m * (c % m) % m) m, Nat.mod_mod (b % m * (c % m)) m]
+  rw[h 1, Nat.mul_one]

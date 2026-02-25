@@ -1,0 +1,12 @@
+name: "[EASY] Egghead"
+description: |-
+  You think you're so smart? Name every movie.
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/egghead)
+flag: "bkctf{hit73m_wi7h_th3_br4in_d3s7r0y3r}"
+author: Laptic
+points: 500
+
+provide:
+  - file: egghead-files.zip
+    as: egghead.zip

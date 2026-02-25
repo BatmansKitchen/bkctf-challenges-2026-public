@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  llm-dice-roller:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - FLAG=${FLAG}
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

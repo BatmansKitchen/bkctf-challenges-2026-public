@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  y2k-lcg-challenge:
+    build: .
+    container_name: y2k_bunker
+    ports:
+      - "0.0.0.0:1999:1999"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1

@@ -1,0 +1,12 @@
+name: "Scryfall Wizard"
+description: |-
+  Be a [Scryfall](https://scryfall.com/docs/syntax) wizard today! 
+
+  `Reminder: The flag format is bkctf{text_here_broken_by_underscores}`
+flag: bkctf{blockers_is_for_mathing}
+author: Jono
+points: 500
+
+provide:
+  - file: cards.zip
+    as: cards.zip

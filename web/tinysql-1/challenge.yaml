@@ -1,0 +1,14 @@
+name: "Tiny SQL"
+description: |-
+  I got tired of dealing with SQL injection so I made my own SQL language. 
+  
+  **DO NOT BRUTE FORCE THIS**
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/tinysql-1)
+flag: bkctf{sql_1nj3ct10n_but_1tty_b1tty}
+author: Dessel
+points: 500
+
+provide:
+  - file: server/web_app/app.py
+    as: app.py

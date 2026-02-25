@@ -1,0 +1,13 @@
+name: "igetsit"
+description: |-
+  Who said gets() is unsafe?
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/igetsit)
+flag: bkctf{g0_g3ts()_y0ur_bag_gIr1}
+author: Laptic
+points: 500
+
+provide:
+  - file: igetsit-files.zip
+    as: igetsit.zip
+

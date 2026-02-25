@@ -1,0 +1,12 @@
+name: "Y2K But Real"
+description: |-
+  What do you mean 1999 isn't a good prime for an LCG?
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/y2k-but-real)
+flag: bkctf{0h_n035_1t5_cr4zy_th3_w0r1d_1s_3nd3ng}
+author: Jono
+points: 500
+
+provide:
+  - file: app.py
+    as: server.py

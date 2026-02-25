@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Labyrinth</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Marcellus', serif;
+        background: linear-gradient(to bottom, #f5f1e6 0%, #e8dcc8 100%);
+        color: #3a2f1b;
+        overflow: hidden;
+    }
+
+    /* Subtle drifting maze grid */
+    body::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        background-image:
+            linear-gradient(#c9b37d 2px, transparent 2px),
+            linear-gradient(90deg, #c9b37d 2px, transparent 2px);
+        background-size: 80px 80px;
+        opacity: 0.12;
+        animation: drift 80s linear infinite;
+    }
+
+    @keyframes drift {
+        from { transform: translate(0, 0); }
+        to { transform: translate(-400px, -400px); }
+    }
+
+    .container {
+        text-align: center;
+        padding: 60px 80px;
+        background: rgba(255, 248, 220, 0.95);
+        border: 4px solid #b89b5e;
+        box-shadow: 0 0 40px rgba(120, 95, 50, 0.4);
+        z-index: 2;
+        max-width: 700px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #5a4526;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+        line-height: 1.6;
+        color: #6b5533;
+    }
+
+    .choices {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .path-btn {
+        padding: 14px 40px;
+        font-size: 1rem;
+        border: 2px solid #b89b5e;
+        background: transparent;
+        color: #5a4526;
+        cursor: pointer;
+        letter-spacing: 3px;
+        transition: all 0.3s ease;
+        min-width: 140px;
+    }
+
+    .path-btn:hover {
+        background: #b89b5e;
+        color: #fff8dc;
+        box-shadow: 0 0 20px #b89b5e;
+        transform: scale(1.08);
+    }
+
+    .ornament {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #b89b5e;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-style: italic;
+        font-size: 0.9rem;
+        color: #8a7448;
+    }
+</style>
+
+</head>
+<body>
+<div class="container">
+    <div class="ornament">⚜</div>
+    <h1>Success!</h1>
+
+    <div class="choices">
+        You escaped the minotaur
+    </div>
+
+    <footer>
+        Choose wisely — not all paths return.
+    </footer>
+</body>
+</html>

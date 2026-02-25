@@ -1,0 +1,13 @@
+name: "Yapster"
+description: |- 
+  The hit peer-to-peer messaging app is under investigation for being a hotspot for distrubuting pirated content.
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/yapster)
+
+flag: "bkctf{y4pp3d_t0_cl0s3_70_5un}"
+author: Laptic
+points: 500
+
+provide:
+  - file: yapster-files.zip
+    as: yapster.zip

@@ -1,0 +1,11 @@
+name: "Haystack"
+description: |-
+  I wanted to send someone a... kind message online, but I heard that substitution ciphers aren't very secure. Fortunately, I found a way to patch that out.
+
+flag: bkctf{gorilla-warfare}
+author: xvade
+points: 500
+
+provide:
+  - file: haystack.txt
+    as: haystack.txt

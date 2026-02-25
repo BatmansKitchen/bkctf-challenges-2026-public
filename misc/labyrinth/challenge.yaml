@@ -1,0 +1,10 @@
+name: "The Labyrinth"
+description: |-
+  Those who fail to learn from history are doomed to repeat it.
+  Enter the [labyrinth](http://34.186.135.240:31337/) at your own risk.
+
+  [Instancer if it lags](https://instancer.batmans.kitchen/challenge/labyrinth)
+
+flag: bkctf{y0ure_g0nn4_g3t_th3_h0rns}
+author: Dessel
+points: 500

@@ -1,0 +1,15 @@
+name: "Missing Homework"
+description: |-
+  I dug up this homework assignment from my "stegnography" class when that was the coolest thing on the internet. 
+  However, I lost the code I used to do it with. 
+  
+  Can you help me figure out what I hid in this file?
+flag: bkctf{th3_w31rd3st_b1n4ry_xm1_f0rm4t_l0ll}
+author: Jono
+points: 500
+
+provide:
+  - file: hiddenfile.apk
+    as: hiddenfile.apk
+  - file: homework.py
+    as: homework.py

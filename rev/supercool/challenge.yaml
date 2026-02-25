@@ -1,0 +1,9 @@
+name: "[EASY] supercool"
+description: "muchcool"
+flag: "bkctf{sup3rv3ryt074llyc00l}"
+author: Laptic
+points: 500
+
+provide:
+  - file: supercool
+    as: supercool

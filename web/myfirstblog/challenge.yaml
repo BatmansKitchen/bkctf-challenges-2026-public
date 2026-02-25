@@ -1,0 +1,8 @@
+name: "[EASY] My First Blog"
+description: |-
+  I've been getting into this [personal blog](http://34.186.135.240:30000/) thing. It's been really fun but apparently you're not supposed to post certain info on the interwebs.
+  Flag is at /flag.txt
+
+flag: bkctf{k3ys_in_th3_l0ck5}
+author: Dessel
+points: 500

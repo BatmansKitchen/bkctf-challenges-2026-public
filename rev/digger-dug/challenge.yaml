@@ -1,0 +1,9 @@
+name: "Digger Dug"
+description: "My indie jrpg masterpiece about depression and wombats is now available for early access!"
+flag: bkctf{B3h0ld_a_m37ApHoR1cAL_p1g3ON}
+author: Laptic
+points: 500
+
+provide:
+  - file: digger-dug-files.zip
+    as: digger_dug.zip

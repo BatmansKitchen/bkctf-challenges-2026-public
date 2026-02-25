@@ -1,0 +1,38 @@
+name: "I love lean 2"
+description: |-
+  Run it back.
+  ```
+  example (a b c n) : (a + 1) ^ (n + 3) + (b + 1) ^ (n + 3) ≠ (c + 1) ^ (n + 3) := 
+  ```
+  
+  Tip: Use [live.lean-lang.org](https://live.lean-lang.org/) to test your solve
+
+  [Instancer (takes a bit of time to verify outputs)](https://instancer.batmans.kitchen/challenge/i-love-lean2)
+
+  Also if you want to do it statically:
+  ```
+  ncat 34.186.135.240 32530
+  ```
+flag: bkctf{lmk-in-a-ticket-if-you-do-this-without-native_decide}
+author: xvade
+points: 500
+provide:
+  - file: template.lean
+    as: template.lean
+
+containers:
+  main:
+    build: ./chall
+    resources:
+      requests:
+        cpu: 0.1
+        memory: 100Mi
+      limits:
+        cpu: 0.75
+        memory: 1000Mi
+    ports:
+    - 5000
+expose:
+  main:
+  - target: 5000
+    tcp: 32530

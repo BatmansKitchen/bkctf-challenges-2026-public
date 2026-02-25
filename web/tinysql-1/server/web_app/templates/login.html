@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DOOM FAQs</title>
+    <link rel="stylesheet" href="/static/style.css"></head>
+<body>
+    <style>
+        body {
+            background-image: url("/static/login_background.jpg");
+        }
+    </style>
+    <header>
+        <a href="/login" class="nav">login</a>
+        <a href="/forum" class="nav">forum</a>
+    </header>
+    <img src="static/doomfaqs.png">
+
+    <div class="login_form">
+        <form name="login" action="/login" method="POST">
+            <label for="user" class="form">username:</label><br>
+            <input type="text" id="user" name="user"><br>
+            <label for="pass" class="form">password:</label><br>
+            <input type="text" id="pass" name="pass"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

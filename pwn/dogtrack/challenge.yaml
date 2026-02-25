@@ -1,0 +1,12 @@
+name: "Dogtrack"
+description: |-
+  Not classy!
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/dogtrack)
+flag: bkctf{7h3_r4w35t_0f_h07d0G5}
+author: Laptic
+points: 500
+
+provide:
+  - file: dogtrack-files.zip
+    as: dogtrack.zip

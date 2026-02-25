@@ -1,0 +1,12 @@
+name: "Cult Classic"
+description: |-
+  It's that time of the year again, where we gather around the ritual circle to summon the dark lord.
+
+  [Instancer](https://instancer.batmans.kitchen/challenge/pwn-cc)
+flag: bkctf{pr415e_0ur_l0rd_4nd_54v10r_c7hulu}
+author: Laptic
+points: 500
+
+provide:
+  - file: cult-classic-files.zip
+    as: cult_classic.zip

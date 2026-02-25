@@ -1,0 +1,9 @@
+name: "Free RAM"
+description: "RAM is so expensive nowadays, so I thought I could download some for free on the internet. But now my rev challenge is corrupted! :("
+flag: bkctf{r4mm1n6_u5_up_w17h_th35e_pr1c35}
+author: Laptic
+points: 500
+
+provide:
+  - file: free-ram-files.zip
+    as: free_ram.zip

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>be a legend - Dragon's Lair</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="terminal-title">be a legend</div>
+            </div>
+            
+            <div class="terminal-body">
+                <div id="output" class="output"></div>
+                <div class="input-line">
+                    <span class="prompt">warrior@dragon:~$</span>
+                    <input type="text" id="command-input" class="command-input" autocomplete="off" autofocus>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="panel">
+                <h3>Game Info</h3>
+                <div class="stats-display">
+                    <div class="stat-group">
+                        <h4>Player</h4>
+                        <div class="stat-item">
+                            <span class="stat-label">HP:</span>
+                            <span id="player-hp" class="stat-value">100</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">ATK:</span>
+                            <span id="player-atk" class="stat-value">10</span>
+                        </div>
+                        <div class="health-bar">
+                            <div id="player-hp-bar" class="health-fill" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-group">
+                        <h4>Dragon</h4>
+                        <div class="stat-item">
+                            <span class="stat-label">HP:</span>
+                            <span id="dragon-hp" class="stat-value">1000</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">ATK:</span>
+                            <span id="dragon-atk" class="stat-value">999</span>
+                        </div>
+                        <div class="health-bar dragon">
+                            <div id="dragon-hp-bar" class="health-fill dragon" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="connection-status">
+                    <span id="status-indicator" class="status-dot disconnected"></span>
+                    <span id="status-text">Disconnected</span>
+                </div>
+            </div>
+
+            <div class="panel">
+                <h3>Commands</h3>
+                <ul class="command-list">
+                    <li><code>STATS</code> - View current stats</li>
+                    <li><code>FIGHT</code> - Engage the dragon</li>
+                    <li><code>SAVE</code> - Save game state</li>
+                    <li><code>LOAD</code> - Load saved state</li>
+                    <li><code>RESET</code> - Reset the game</li>
+                    <li><code>QUIT</code> - Disconnect</li>
+                </ul>
+            </div>
+
+            <div class="panel quick-actions">
+                <h3>Quick Actions</h3>
+                <button class="action-btn" onclick="sendCommand('STATS')">Stats</button>
+                <button class="action-btn" onclick="sendCommand('FIGHT')">Fight</button>
+                <button class="action-btn" onclick="sendCommand('SAVE')">Save</button>
+                <button class="action-btn" onclick="sendCommand('LOAD')">Load</button>
+                <button id="reset-btn" class="action-btn" onclick="sendCommand('RESET')" style="display: none;">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+nomatch show (withPtrEq True False (fun () => false) fun eq => nomatch cast eq ⟨⟩) = true by native_decide

@@ -1,0 +1,15 @@
+name: "Spaceship Conference"
+description: |-
+  It's like soccer, but with cars!
+
+  Find the location that this game was played.
+  Use coordinates, rounded to 3 decimal points.
+
+  format: `bkctf{XX.XXX,YY.YYY}`
+flag: bkctf{34.104,-117.876}
+author: JRitz
+points: 500
+
+provide:
+  - file: image.png
+    as: epicplayz.png

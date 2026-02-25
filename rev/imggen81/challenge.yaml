@@ -1,0 +1,9 @@
+name: "IMGGEN81"
+description: "Back in the 80's, we didn't have fancy apps to AI generate images."
+flag: "bkctf{h3yy_4r3nt_y0u_7h3_05_fr0m_051n_4r0und?}"
+author: Laptic
+points: 500
+
+provide:
+  - file: imggen81-files.zip
+    as: imggen81.zip
