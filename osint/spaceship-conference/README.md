@@ -17,13 +17,13 @@ Looking closely, you can see we are trying to find a game that ended 3-2, 11:32 
 
 Well, how can we find specific Rocket League replays?
 
-With a quick google search, we can find the website [ballchasing.com](https://ballchasing.com), a public replay storage system!
+With a quick Google search, we can find the website [ballchasing.com](https://ballchasing.com), a public replay storage system!
 
-Using this website, it is possible to filter games to fit a specific criteria.
+Using this website, it is possible to filter games to fit specific criteria.
 
 Searching by the player 'Kronovi^-^', and knowing the fact that it is a local game (as we need to find a location), and knowing there is a pro player in the lobby, we narrow down to... 356 results. Yikes
 
-While it is possible to search through this games using ctrl+f in order to find games that had 11:32 minute overtimes, there is another option available.
+While it is possible to search through these games using ctrl+f in order to find games that had 11:32 minute overtimes, there is another option available.
 
 Familiar players may be able to recognize the map being played on as *Champion's Field (Day)*, and narrowing results down to this map leaves us with **11** replays!
 
@@ -45,6 +45,7 @@ A quick lookup of *Beyond the Summit LLC* will get you this address!
 
 ***759 Arrow Grand Circle, Covina, CA 91722, United States***
 
-Last thing needed is to go into google maps and get the coordinates for this place!
+The last thing needed is to go to Google Maps and get the coordinates for this place!
+
 
 Flag: `bkctf{34.104,-117.876}`
