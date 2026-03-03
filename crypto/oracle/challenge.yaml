@@ -11,5 +11,5 @@ author: Jono
 points: 500
 
 provide:
-  - file: SecureApp.java
+  - file: server/SecureApp.java
     as: Server.java
