@@ -32,8 +32,8 @@ For example, `BKCTF` encodes as `A2 I3 A3 O5 E0`.
 
 Decoding the image symbol by symbol:
 ```
-O5 O3 I0 A0 I5 I3 E0 _  O4 E3 A0 E1 O5 _ E3 O0 O3 O4 E0 _ U4 A0 A2 O5
-T  R  I  A  N  G  L  _  S  H  A  F  T  _  H  O  R  S  E  _  Y  A  C  T
+O5 O3 I0 A0 I4 E2 I3 E0 _  O4 E3 A0 E1 O5 _  E3 O0 O3 O4 E0 _  U4 A0 A2 E3 O5
+T  R  I  A  N  G  L  E  _  S  H  A  F  T  _  H  O  R  S  E  _  Y  A  C  H  T
 ```
 
 Giving the plaintext: **triangle shaft horse yacht**
